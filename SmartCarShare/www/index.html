@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<!--
+		
+		Based on a template by BlackrockDigital provided under the MIT license.
+		Template is free and open-source. Downloaded 21/8/17 from https://startbootstrap.com/template-overviews/bare/
+		
+		Created:     21/8/17
+		Author:      Thomas Reichert
+		Last edit:   15/10/17
+		
+	-->
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SmartCarShare</title>
+	
+	<!-- Bootstrap core CSS and custom theme extensions -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/theme.css" rel="stylesheet">
+	
+	<!-- jQuery and Bootstrap scripts -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+    <!-- Time library and Bootstrap DateTimePicker -->
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- My own library-type script things -->
+    <script src="js/buildhelp.js"></script>
+    <script src="js/apiurl.js"></script>
+    <script src="js/controller.js"></script>
+	
+	<!-- Set initiation bit -->
+	<script>
+
+        /********************************************
+        * Startup
+        ********************************************/
+
+        // Load starting point when document is ready
+        $(document).ready(function () {
+            navigate('start');
+        });
+
+	</script>
+	
+</head>
+
+<body>
+	
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg fixed-top carshare-header">
+		<div class="container">
+			<div class="navbar-header carshare-bg-header">
+				<button class="navbar-toggle collapsed carshare-floaty carshare-toggley-thing" type="button"
+						data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="sr-only">Expand Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="javascript:navigate('start');">
+                    <span>
+                        <img src="images/car_static.gif" class="carshare-logo-img" alt="car_logo" id="imgCar" />
+                        SmartCarShare
+                    </span>
+                </a>
+				<button class="navbar-toggle carshare-toggley-thing hidden" type="button" id="btnPlus"
+						onClick="navigate('newBooking');">
+					<span class="sr-only">Add New</span>
+					<strong>+</strong>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarResponsive"></div>
+		</div>
+	</nav>
+	
+	<!-- Page Content -->
+	<div class="mt-5" id="content"></div>
+	
+	<!-- Navigation footer -->
+	<div class="navbar-fixed-bottom" id="footage"></div>
+	
+    <!-- Load the Google Maps API asynchronously -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBud9bCicBTnSLQqax3ZZDcxf6gacCvyMs"></script>
+
+</body>
+</html>

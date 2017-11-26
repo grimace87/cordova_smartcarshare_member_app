@@ -1,0 +1,80 @@
+body {
+    background-color: #e0e4e0;
+}
+.carshare-header {
+    background-color: #b8e81c;
+}
+.carshare-bg-header {
+    background-image: url(../images/bg_header.png);
+    background-repeat: no-repeat;
+}
+.carshare-logo-img {
+    height: 1.8em;
+    width: 1.8em;
+    margin-right: 0.5em;
+}
+.carshare-header a {
+	color: #777777;
+}
+.carshare-header a:hover, .carshare-header a:focus {
+	color: #333333;
+	background-color: #b8e81c !important;
+}
+.carshare-subheader {
+    background-color: #dcf48e !important;
+	background-image: none !important;
+	color: #000000;
+}
+.carshare-subheader a {
+	color: #000000;
+}
+.carshare-indent-list {
+    list-style: none;
+    padding-left: 0.5em;
+}
+.carshare-indent-list a {
+	color: #40a8d4;
+}
+.carshare-table-hdr {
+    background-color: #dcf48e;
+}
+.carshare-table-row {
+    background-color: #ffffff;
+}
+.carshare-btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    background-color: #b8e81c;
+}
+.carshare-toggley-thing {
+	border-color: #dddddd;
+}
+.carshare-toggley-thing span {
+	background-color: #888888;
+}
+.carshare-item-fade, .carshare-item-fade a, .carshare-item-fade a:hover, .carshare-item-fade a:focus {
+	background-color: #eefacf !important;
+	color: #dddddd;
+}
+.carshare-footlinks {
+	background-color: #c0c8c0;
+}
+.navbar-header .carshare-floaty {
+	float: left;
+}
+.carshare-subheader-bad {
+    background-color: #f08a68 !important;
+}
+.carshare-bad {
+    background-color: #f0e4e0 !important;
+}
+.carshare-subheader-happy {
+    background-color: #8af068 !important;
+}
+.carshare-happy {
+    background-color: #e4f0e0 !important;
+}
+.carshare-transition {
+    transition: height 0.5s;
+}
